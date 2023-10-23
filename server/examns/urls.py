@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import ExamRegister
+from .views import Question_Bank_Register, General_Exam_Register
 
 urlpatterns = [
-    path('', ExamRegister.as_view()),
+    path('', Question_Bank_Register.as_view()),
+    path('generate-exam/', General_Exam_Register.as_view()),
 ]

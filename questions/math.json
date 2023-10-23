@@ -1,0 +1,303 @@
+{
+    "topic": "Math",
+    "questions": [
+        {
+            "correct_answer": "7",
+            "question": "What is the result of 4 + 3?",
+            "options": ["7", "8", "6", "5"]
+        },
+
+        {
+            "correct_answer": "20",
+            "question": "If x = 5 and y = 4, what is the value of 3x + 5y?",
+            "options": ["20", "15", "25", "30"]
+        },
+
+        {
+            "correct_answer": "64",
+            "question": "What is 8 squared?",
+            "options": ["64", "16", "32", "128"]
+        },
+
+        {
+            "correct_answer": "12",
+            "question": "If a = 4 and b = 3, what is the result of a × b?",
+            "options": ["12", "7", "10", "16"]
+        },
+
+        {
+            "correct_answer": "9",
+            "question": "What is the square root of 81?",
+            "options": ["9", "6", "7", "8"]
+        },
+
+        {
+            "correct_answer": "45",
+            "question": "If x = 15 and y = 3, what is the value of 3x + 6y?",
+            "options": ["45", "33", "54", "27"]
+        },
+
+        {
+            "correct_answer": "18",
+            "question": "What is 6 × 3?",
+            "options": ["18", "12", "24", "9"]
+        },
+
+        {
+            "correct_answer": "5",
+            "question": "What is 15 divided by 3?",
+            "options": ["5", "3", "6", "10"]
+        },
+
+        {
+            "correct_answer": "40",
+            "question": "If x = 8 and y = 5, what is the value of 2x + 3y?",
+            "options": ["40", "30", "25", "50"]
+        },
+
+        {
+            "correct_answer": "72",
+            "question": "What is 9 × 8?",
+            "options": ["72", "81", "64", "56"]
+        },
+
+        {
+            "correct_answer": "15",
+            "question": "If a = 45 and b = 3, what is the result of a ÷ b?",
+            "options": ["15", "12", "10", "9"]
+        },
+
+        {
+            "correct_answer": "144",
+            "question": "What is 12 squared?",
+            "options": ["144", "24", "36", "64"]
+        },
+
+        {
+            "correct_answer": "7.5",
+            "question": "What is 15 ÷ 2?",
+            "options": ["7.5", "6", "8", "7"]
+        },
+
+        {
+            "correct_answer": "35",
+            "question": "If x = 7 and y = 5, what is the value of 4x + 3y?",
+            "options": ["35", "40", "25", "30"]
+        },
+
+        {
+            "correct_answer": "25",
+            "question": "What is 5 squared?",
+            "options": ["25", "10", "15", "20"]
+        },
+
+        {
+            "correct_answer": "14",
+            "question": "If a = 56 and b = 4, what is the result of a ÷ b?",
+            "options": ["14", "16", "12", "10"]
+        },
+
+        {
+            "correct_answer": "49",
+            "question": "What is 7 squared?",
+            "options": ["49", "64", "36", "81"]
+        },
+
+        {
+            "correct_answer": "8",
+            "question": "What is 16 ÷ 2?",
+            "options": ["8", "6", "4", "10"]
+        },
+
+        {
+            "correct_answer": "27",
+            "question": "What is 3 cubed?",
+            "options": ["27", "9", "81", "36"]
+        },
+
+        {
+            "correct_answer": "48",
+            "question": "What is 8 × 6?",
+            "options": ["48", "64", "36", "56"]
+        },
+
+        {
+            "correct_answer": "18",
+            "question": "What is 2 × 3 × 3?",
+            "options": ["18", "12", "9", "27"]
+        },
+
+        {
+            "correct_answer": "64",
+            "question": "What is 4 cubed?",
+            "options": ["64", "16", "256", "32"]
+        },
+
+        {
+            "correct_answer": "36",
+            "question": "What is 12 × 3?",
+            "options": ["36", "48", "24", "30"]
+        },
+
+        {
+            "correct_answer": "14",
+            "question": "What is 7 + 7?",
+            "options": ["14", "12", "16", "18"]
+        },
+
+        {
+            "correct_answer": "21",
+            "question": "What is 9 + 12?",
+            "options": ["21", "15", "27", "18"]
+        },
+
+        {
+            "correct_answer": "40",
+            "question": "What is 5 × 8?",
+            "options": ["40", "64", "20", "56"]
+        },
+
+        {
+            "correct_answer": "81",
+            "question": "What is 9 squared?",
+            "options": ["81", "36", "16", "64"]
+        },
+
+        {
+            "correct_answer": "6",
+            "question": "What is 12 ÷ 2?",
+            "options": ["6", "4", "8", "10"]
+        },
+
+        {
+            "correct_answer": "15",
+            "question": "What is 45 ÷ 3?",
+            "options": ["15", "12", "10", "9"]
+        },
+
+        {
+            "correct_answer": "50",
+            "question": "What is 25 × 2?",
+            "options": ["50", "40", "75", "100"]
+        },
+
+        {
+            "correct_answer": "20",
+            "question": "What is 100 ÷ 5?",
+            "options": ["20", "25", "10", "15"]
+        },
+
+        {
+            "correct_answer": "9",
+            "question": "What is 3 squared?",
+            "options": ["9", "6", "12", "15"]
+        },
+
+        {
+            "correct_answer": "7",
+            "question": "What is 28 ÷ 4?",
+            "options": ["7", "14", "5", "6"]
+        },
+
+        {
+            "correct_answer": "16",
+            "question": "What is 4 × 4?",
+            "options": ["16", "8", "12", "20"]
+        },
+        {
+            "correct_answer": "36",
+            "question": "What is 6 squared?",
+            "options": ["36", "64", "9", "25"]
+        },
+
+        {
+            "correct_answer": "56",
+            "question": "What is 8 × 7?",
+            "options": ["56", "64", "40", "48"]
+        },
+
+        {
+            "correct_answer": "12",
+            "question": "What is 48 ÷ 4?",
+            "options": ["12", "16", "8", "10"]
+        },
+
+        {
+            "correct_answer": "72",
+            "question": "What is 8 × 9?",
+            "options": ["72", "64", "40", "56"]
+        },
+
+        {
+            "correct_answer": "5",
+            "question": "What is the result of 15 - 10?",
+            "options": ["5", "10", "15", "20"]
+        },
+
+        {
+            "correct_answer": "49",
+            "question": "What is 7 × 7?",
+            "options": ["49", "64", "36", "81"]
+        },
+
+        {
+            "correct_answer": "30",
+            "question": "What is 6 × 5?",
+            "options": ["30", "35", "40", "45"]
+        },
+
+        {
+            "correct_answer": "18",
+            "question": "What is 3 × 6?",
+            "options": ["18", "12", "9", "15"]
+        },
+
+        {
+            "correct_answer": "14",
+            "question": "What is 20 - 6?",
+            "options": ["14", "16", "12", "18"]
+        },
+
+        {
+            "correct_answer": "81",
+            "question": "What is 9 × 9?",
+            "options": ["81", "64", "36", "49"]
+        },
+
+        {
+            "correct_answer": "35",
+            "question": "What is 7 × 5?",
+            "options": ["35", "40", "45", "50"]
+        },
+
+        {
+            "correct_answer": "9",
+            "question": "What is the square root of 81?",
+            "options": ["9", "6", "7", "8"]
+        },
+
+        {
+            "correct_answer": "16",
+            "question": "What is the result of 4 × 4?",
+            "options": ["16", "8", "12", "20"]
+        },
+
+        {
+            "correct_answer": "20",
+            "question": "What is 10 + 10?",
+            "options": ["20", "15", "25", "30"]
+        },
+
+        {
+            "correct_answer": "6",
+            "question": "What is 12 ÷ 2?",
+            "options": ["6", "4", "8", "10"]
+        },
+
+        {
+            "correct_answer": "24",
+            "question": "What is 4 × 6?",
+            "options": ["24", "16", "10", "36"]
+        }
+    ]
+}

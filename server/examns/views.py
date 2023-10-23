@@ -2,20 +2,55 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from examns.models import Exam
-from .serializers import ExamSerializer
+from examns.models import Question_Bank, General_Exam
+from .serializers import Question_BankSerializer, General_Exam_Serializer
 
 
-class ExamRegister(APIView):
+class Question_Bank_Register(APIView):
     def get(self, request, *args, **kwargs):
-        examns = Exam.objects.all()
-        serializaers = ExamSerializer(examns, many=True)
+        questions = Question_Bank.objects.all()
+        serializaers = Question_BankSerializer(questions, many=True)
         return Response(serializaers.data, status=status.HTTP_200_OK)
 
     def post(self, request, *args, **kwargs):
-        serializer = ExamSerializer(data=request.data)
+        serializer = Question_BankSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             print(request.data)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class General_Exam_Register(APIView):
+    def get(self, request, *args, **kwargs):
+        questions = General_Exam.objects.all()
+        serializaers = General_Exam_Serializer(questions, many=True)
+        return Response(serializaers.data, status=status.HTTP_200_OK)
+
+    def post(self, request, *args, **kwargs):
+        question_bank = Question_Bank.objects.filter(
+            topic=request.GET.get("topic"))
+        serializer = Question_Bank.generate_topic_exam(
+            topic=request.GET.get("topic"),
+            questions=question_bank["questions"],
+            num_questions=40)
+        if serializer.is_valid():
+            serializer.save()
+            print(request.data)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+# class QuestionBankRegister(APIView):
+#     def get(self, request, *args, **kwargs):
+#         questions = Question_Bank.objects.all()
+#         serializaers = Question_BankSerializer(questions, many=True)
+#         return Response(serializaers.data, status=status.HTTP_200_OK)
+
+#     def post(self, request, *args, **kwargs):
+#         serializer = Question_BankSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             print(request.data)
+#             return Response(serializer.data, status=status.HTTP_201_CREATED)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

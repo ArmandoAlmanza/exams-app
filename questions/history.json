@@ -1,0 +1,313 @@
+{
+    "topic": "History",
+    "questions": [
+        {
+            "correct_answer": "1492",
+            "question": "When was America discovered?",
+            "options": ["1492", "1512", "9871", "1563"]
+        },
+
+        {
+            "correct_answer": "476",
+            "question": "In which year did the Western Roman Empire fall?",
+            "options": ["476", "632", "1492", "1789"]
+        },
+
+        {
+            "correct_answer": "1066",
+            "question": "What year did the Battle of Hastings take place?",
+            "options": ["1066", "1215", "1492", "1776"]
+        },
+
+        {
+            "correct_answer": "1789",
+            "question": "In which year did the French Revolution begin?",
+            "options": ["1789", "1815", "1901", "1620"]
+        },
+
+        {
+            "correct_answer": "1945",
+            "question": "When did World War II end?",
+            "options": ["1945", "1914", "1969", "2001"]
+        },
+
+        {
+            "correct_answer": "1812",
+            "question": "In what year did the War of 1812 between the United States and Britain begin?",
+            "options": ["1812", "1865", "1776", "1901"]
+        },
+
+        {
+            "correct_answer": "1066",
+            "question": "Who won the Battle of Hastings in 1066?",
+            "options": [
+                "William the Conqueror",
+                "King Harold II",
+                "Richard the Lionheart",
+                "Henry VIII"
+            ]
+        },
+
+        {
+            "correct_answer": "1492",
+            "question": "Which year marked the first voyage of Christopher Columbus to the Americas?",
+            "options": ["1492", "1453", "1517", "1533"]
+        },
+
+        {
+            "correct_answer": "1947",
+            "question": "When did India gain independence from British colonial rule?",
+            "options": ["1947", "1901", "1969", "1865"]
+        },
+
+        {
+            "correct_answer": "1787",
+            "question": "In what year was the U.S. Constitution written?",
+            "options": ["1787", "1776", "1804", "1850"]
+        },
+
+        {
+            "correct_answer": "1969",
+            "question": "What year did Apollo 11 land on the moon?",
+            "options": ["1969", "1955", "1975", "1983"]
+        },
+
+        {
+            "correct_answer": "1917",
+            "question": "When did the Russian Revolution take place?",
+            "options": ["1917", "1901", "1939", "1950"]
+        },
+
+        {
+            "correct_answer": "1588",
+            "question": "In which year did the Spanish Armada attempt to invade England?",
+            "options": ["1588", "1620", "1492", "1776"]
+        },
+
+        {
+            "correct_answer": "1815",
+            "question": "In which year was the Battle of Waterloo fought?",
+            "options": ["1815", "1865", "1776", "1901"]
+        },
+
+        {
+            "correct_answer": "476",
+            "question": "What year marked the fall of the Western Roman Empire?",
+            "options": ["476", "632", "1492", "1789"]
+        },
+
+        {
+            "correct_answer": "732",
+            "question": "In which year was the Battle of Tours fought?",
+            "options": ["732", "1066", "1492", "1815"]
+        },
+
+        {
+            "correct_answer": "1941",
+            "question": "When did the attack on Pearl Harbor occur?",
+            "options": ["1941", "1939", "1945", "1950"]
+        },
+
+        {
+            "correct_answer": "1492",
+            "question": "What year did Christopher Columbus first arrive in the Caribbean?",
+            "options": ["1492", "1453", "1517", "1533"]
+        },
+
+        {
+            "correct_answer": "1688",
+            "question": "In which year did the Glorious Revolution take place in England?",
+            "options": ["1688", "1642", "1707", "1776"]
+        },
+
+        {
+            "correct_answer": "1783",
+            "question": "In what year did the American Revolutionary War end?",
+            "options": ["1783", "1776", "1812", "1865"]
+        },
+
+        {
+            "correct_answer": "476",
+            "question": "When did the last Roman emperor, Romulus Augustulus, abdicate the throne?",
+            "options": ["476", "632", "1492", "1789"]
+        },
+
+        {
+            "correct_answer": "1914",
+            "question": "What year did World War I begin?",
+            "options": ["1914", "1901", "1939", "1950"]
+        },
+
+        {
+            "correct_answer": "1789",
+            "question": "In which year did the Estates-General convene, leading to the French Revolution?",
+            "options": ["1789", "1815", "1901", "1620"]
+        },
+
+        {
+            "correct_answer": "1492",
+            "question": "When did the Reconquista of Spain conclude?",
+            "options": ["1492", "1453", "1517", "1533"]
+        },
+
+        {
+            "correct_answer": "1815",
+            "question": "In what year was the Congress of Vienna held?",
+            "options": ["1815", "1789", "1901", "1620"]
+        },
+
+        {
+            "correct_answer": "1347",
+            "question": "What year did the Black Death begin to ravage Europe?",
+            "options": ["1347", "1401", "1273", "1420"]
+        },
+
+        {
+            "correct_answer": "1945",
+            "question": "When was the United Nations founded?",
+            "options": ["1945", "1919", "1969", "2001"]
+        },
+
+        {
+            "correct_answer": "1492",
+            "question": "In what year did the Spanish Inquisition begin?",
+            "options": ["1492", "1453", "1517", "1533"]
+        },
+
+        {
+            "correct_answer": "1781",
+            "question": "When did the Siege of Yorktown, a decisive battle in the American Revolutionary War, occur?",
+            "options": ["1781", "1776", "1812", "1865"]
+        },
+
+        {
+            "correct_answer": "476",
+            "question": "What year did Odoacer depose Romulus Augustulus, marking the end of the Roman Empire in the West?",
+            "options": ["476", "632", "1492", "1789"]
+        },
+        {
+            "correct_answer": "1804",
+            "question": "In what year did Napoleon Bonaparte become Emperor of the French?",
+            "options": ["1804", "1815", "1789", "1750"]
+        },
+
+        {
+            "correct_answer": "1066",
+            "question": "When did the Norman Conquest of England take place?",
+            "options": ["1066", "1215", "1492", "1776"]
+        },
+
+        {
+            "correct_answer": "1912",
+            "question": "In which year did the Titanic sink?",
+            "options": ["1912", "1907", "1915", "1920"]
+        },
+
+        {
+            "correct_answer": "1963",
+            "question": "When was President John F. Kennedy assassinated?",
+            "options": ["1963", "1955", "1975", "1980"]
+        },
+
+        {
+            "correct_answer": "1787",
+            "question": "In what year was the United States Constitution ratified?",
+            "options": ["1787", "1776", "1804", "1850"]
+        },
+
+        {
+            "correct_answer": "1498",
+            "question": "When did Vasco da Gama arrive in India, establishing a sea route to Asia?",
+            "options": ["1498", "1512", "1521", "1540"]
+        },
+
+        {
+            "correct_answer": "1453",
+            "question": "In which year did the Ottoman Empire capture Constantinople?",
+            "options": ["1453", "1492", "1517", "1533"]
+        },
+
+        {
+            "correct_answer": "1776",
+            "question": "What year did the United States declare independence from Great Britain?",
+            "options": ["1776", "1789", "1804", "1812"]
+        },
+
+        {
+            "correct_answer": "1939",
+            "question": "When did World War II begin?",
+            "options": ["1939", "1941", "1945", "1950"]
+        },
+
+        {
+            "correct_answer": "1493",
+            "question": "In what year did Christopher Columbus make his second voyage to the Americas?",
+            "options": ["1493", "1492", "1498", "1500"]
+        },
+
+        {
+            "correct_answer": "1865",
+            "question": "When was President Abraham Lincoln assassinated?",
+            "options": ["1865", "1870", "1855", "1880"]
+        },
+
+        {
+            "correct_answer": "1066",
+            "question": "Who was the English king defeated by William the Conqueror at the Battle of Hastings in 1066?",
+            "options": [
+                "Harold II",
+                "Edward the Confessor",
+                "Henry I",
+                "Richard the Lionheart"
+            ]
+        },
+
+        {
+            "correct_answer": "1914",
+            "question": "In what year did Archduke Franz Ferdinand of Austria-Hungary get assassinated, leading to the start of World War I?",
+            "options": ["1914", "1901", "1939", "1950"]
+        },
+
+        {
+            "correct_answer": "1520",
+            "question": "When did Hernán Cortés and his army arrive in the Aztec capital of Tenochtitlán?",
+            "options": ["1520", "1512", "1533", "1540"]
+        },
+
+        {
+            "correct_answer": "1947",
+            "question": "In which year did India gain independence from British colonial rule?",
+            "options": ["1947", "1901", "1969", "1865"]
+        },
+
+        {
+            "correct_answer": "1642",
+            "question": "When did the English Civil War between Parliamentarians and Royalists begin?",
+            "options": ["1642", "1688", "1707", "1776"]
+        },
+
+        {
+            "correct_answer": "1969",
+            "question": "What year did humans first set foot on the moon during the Apollo 11 mission?",
+            "options": ["1969", "1955", "1975", "1983"]
+        },
+
+        {
+            "correct_answer": "732",
+            "question": "In which year was the Battle of Tours fought, halting the Muslim expansion into Europe?",
+            "options": ["732", "1066", "1492", "1815"]
+        },
+
+        {
+            "correct_answer": "1793",
+            "question": "In what year was King Louis XVI of France executed during the French Revolution?",
+            "options": ["1793", "1789", "1815", "1820"]
+        },
+
+        {
+            "correct_answer": "1492",
+            "question": "When did the Alhambra Decree expelling Jews from Spain take effect?",
+            "options": ["1492", "1453", "1517", "1533"]
+        }
+    ]
+}
