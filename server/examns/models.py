@@ -13,7 +13,6 @@ class QuestionElement(EmbeddedDocument):
 
 
 class Question_Bank(Document):
-    question_bank_id = fields.StringField(max_length=150)
     topic = fields.StringField(max_length=50)
     questions = fields.ListField(fields.EmbeddedDocumentField(
         QuestionElement), null=True, blank=True)
@@ -26,11 +25,12 @@ class Question_Bank(Document):
     def __str__(self):
         return str(self.id)
 
-    def generate_topic_exam(topic, questions, num_questions=50):
+    def generate_topic_exam(topic, questions, user, num_questions=50):
         new_exam = random.sample(questions, num_questions)
         return {
-            "exam_id": uuid4(),
+            "exam_id": str(uuid4()),
             "topic": topic,
+            "user": user,
             "questions": new_exam
         }
 
@@ -42,9 +42,10 @@ class Question_Bank(Document):
         return general_exam
 
 
-class General_Exam:
+class General_Exam(Document):
     exam_id = fields.StringField(max_length=150)
     user = fields.StringField(max_length=200)
+    topic = fields.StringField(max_length=200)
     questions = fields.ListField(fields.EmbeddedDocumentField(
         QuestionElement), null=True, blank=True)
     meta = {

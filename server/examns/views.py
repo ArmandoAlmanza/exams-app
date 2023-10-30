@@ -23,20 +23,23 @@ class Question_Bank_Register(APIView):
 
 class General_Exam_Register(APIView):
     def get(self, request, *args, **kwargs):
-        questions = General_Exam.objects.all()
-        serializaers = General_Exam_Serializer(questions, many=True)
+        questions = Question_Bank.objects.filter(topic=kwargs.get("topic"))
+        serializaers = Question_BankSerializer(questions, many=True)
         return Response(serializaers.data, status=status.HTTP_200_OK)
 
     def post(self, request, *args, **kwargs):
         question_bank = Question_Bank.objects.filter(
-            topic=request.GET.get("topic"))
-        serializer = Question_Bank.generate_topic_exam(
-            topic=request.GET.get("topic"),
-            questions=question_bank["questions"],
+            topic=kwargs.get("topic"))
+
+        topic_exam = Question_Bank.generate_topic_exam(
+            topic=kwargs.get("topic"),
+            questions=question_bank[0].questions,
+            user=request.data.get("user"),
             num_questions=40)
+
+        serializer = General_Exam_Serializer(data=topic_exam)
         if serializer.is_valid():
             serializer.save()
-            print(request.data)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

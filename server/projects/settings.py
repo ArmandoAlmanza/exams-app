@@ -96,7 +96,7 @@ MONGODB_DATABASES = {
         'name': 'unam',  # Nombre de la base de datos en MongoDB
         'host': 'localhost',
         'port': 27017,
-        'username': 'arandano',
+        'username': 'root',
         'password': 'coca123',
         'authentication_source': 'admin',  # Base de datos de autenticación
         'authentication_mechanism': 'SCRAM-SHA-1',  # Método de autenticación
