@@ -25,14 +25,8 @@ class Question_Bank(Document):
     def __str__(self):
         return str(self.id)
 
-    def generate_topic_exam(topic, questions, user, num_questions=50):
-        new_exam = random.sample(questions, num_questions)
-        return {
-            "exam_id": str(uuid4()),
-            "topic": topic,
-            "user": user,
-            "questions": new_exam
-        }
+    def generate_topic_exam(questions, num_questions=50):
+        return random.sample(questions, num_questions)
 
     def generate_general_exam(topics, questions):
         general_exam = []
@@ -42,7 +36,7 @@ class Question_Bank(Document):
         return general_exam
 
 
-class General_Exam(Document):
+class Topic_Exam(Document):
     exam_id = fields.StringField(max_length=150)
     user = fields.StringField(max_length=200)
     topic = fields.StringField(max_length=200)
@@ -50,7 +44,7 @@ class General_Exam(Document):
         QuestionElement), null=True, blank=True)
     meta = {
         'db_alias': 'default',
-        'collection': 'general_exams',
+        'collection': 'topic_exams',
         'db': 'unam',
     }
 

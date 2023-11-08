@@ -1,5 +1,5 @@
 from rest_framework_mongoengine.serializers import DocumentSerializer, EmbeddedDocumentSerializer
-from .models import QuestionElement, Question_Bank, General_Exam
+from .models import QuestionElement, Question_Bank, Topic_Exam
 
 
 class QuestionElementSerializer(EmbeddedDocumentSerializer):
@@ -32,17 +32,16 @@ class Question_BankSerializer(DocumentSerializer):
         return exam
 
 
-
-class General_Exam_Serializer(DocumentSerializer):
+class Topic_Exam_Serializer(DocumentSerializer):
     questions = QuestionElementSerializer(many=True)
 
     class Meta:
-        model = General_Exam
+        model = Topic_Exam
         fields = '__all__'
 
     def create(self, validated_data):
         questions_data = validated_data.pop('questions')
-        exam = General_Exam.objects.create(**validated_data)
+        exam = Topic_Exam.objects.create(**validated_data)
 
         # Verificamos si el campo 'questions' es None y, de ser así, lo inicializamos como una lista vacía
         if exam.questions is None:
