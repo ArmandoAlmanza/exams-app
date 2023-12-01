@@ -8,5 +8,5 @@ import { CommonModule } from '@angular/common';
   templateUrl: './landing-page.component.html',
 })
 export class LandingPageComponent {
-
+  logged = false;
 }

@@ -1,1 +1,17 @@
-<h1>Worales, entrale carnal</h1>
+<header class="site__header">
+  <div class="navigation__container">
+    <h1 class="logo">BerryExams</h1>
+    <nav class="navbar">
+      <a href="">Home</a>
+      <a href="">New General Exam</a>
+      <a href="">New Topic Exam</a>
+    </nav>
+  </div>
+  @if (logged) {
+  <div>
+    <h1>Youre logged</h1>
+  </div>
+  } @else {
+  <button class="btn btn__log">Logeate we</button>
+  }
+</header>
