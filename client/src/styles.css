@@ -62,4 +62,5 @@ p {
 }
 .navbar a:hover {
   color: #D0BFFF;
+  cursor: pointer;
 }
