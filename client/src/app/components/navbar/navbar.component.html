@@ -3,13 +3,20 @@
     <h1 class="logo">BerryExams</h1>
     <nav class="navbar">
       <a
+        routerLink="/"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Home <fa-icon class="nav__icon" [icon]="faHome"></fa-icon
+      ></a>
+      <a
         routerLink="/auth"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        >Home</a
+        >New General Exam</a
       >
-      <a href="">New General Exam</a>
-      <a href="">New Topic Exam</a>
+      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
+        >New Topic Exam</a
+      >
     </nav>
   </div>
   @if (logged) {
