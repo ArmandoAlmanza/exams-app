@@ -2,21 +2,16 @@
   <div class="navigation__container">
     <h1 class="logo">BerryExams</h1>
     <nav class="navbar">
+      @for (link of links; track $index) {
       <a
-        routerLink="/"
+        routerLink="{{ link.href }}"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        >Home <fa-icon class="nav__icon" [icon]="faHome"></fa-icon
-      ></a>
-      <a
-        routerLink="/auth"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >New General Exam</a
       >
-      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
-        >New Topic Exam</a
-      >
+        {{ link.title }}
+        <fa-icon class="nav__icon" [icon]="link.icon"></fa-icon>
+      </a>
+      }
     </nav>
   </div>
   @if (logged) {
@@ -24,6 +19,6 @@
     <h1>Youre logged</h1>
   </div>
   } @else {
-  <button class="btn btn__log" (click)="helloWorld()">Logeate we</button>
+  <button class="btn btn__log" (click)="helloWorld()">Login</button>
   }
 </header>
