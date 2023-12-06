@@ -3,6 +3,11 @@
 :root {
   --primary-font: "Montserrat", sans-serif;
   --second-font: "Exo 2", sans-serif;
+  --light-purple: #e7c6ff;
+  --purple: #c8b6ff;
+  --lilic: #b8c0ff;
+  --light-pink: #ffd6ff;
+  --blue: #bbd0ff;
 }
 
 html {
@@ -17,7 +22,7 @@ html {
 body {
   font-size: 1.6rem;
   margin: 0;
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
   font-family: var(--primary-font);
 }
 
@@ -33,7 +38,7 @@ a {
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 a:hover {
   color: #d0bfff;
@@ -41,16 +46,17 @@ a:hover {
 
 /*@ Clases generales */
 .btn {
-  background: none;
-  border: 1px solid #000;
-  padding: 1.25rem 2rem;
-  display: block;
-  width: 20rem;
-  transition: all 0.3s ease-in-out;
-}
-.btn:hover {
+  background-color: var(--lilic);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
   cursor: pointer;
-  background-color: #d0bfff;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--light-purple);
 }
 
 /** Header */
@@ -61,6 +67,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
+  border-bottom: 1px solid var(--light-pink);
 }
 .navigation__container {
   display: flex;
@@ -70,6 +77,7 @@ a:hover {
 }
 .logo {
   color: #000;
+  font-family: var(--second-font);
 }
 
 .navbar {
