@@ -4,18 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /*@ Components */
 .btn {
-  background-color: var(--lilic);
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+	background-color: #b8c0ff;
+	color: #fff;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: var(--light-purple);
+	background-color: #e7c6ff;
 }
-
