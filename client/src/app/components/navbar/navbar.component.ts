@@ -17,7 +17,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 	templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
-	faHome = faHome;
 	logged = false;
 	links = [
 		{ href: '/', title: 'Home', icon: faHome },

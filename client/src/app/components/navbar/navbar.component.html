@@ -1,24 +1,26 @@
-<header class="site__header">
-  <div class="navigation__container">
-    <h1 class="logo">BerryExams</h1>
-    <nav class="navbar">
-      @for (link of links; track $index) {
-      <a
-        routerLink="{{ link.href }}"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-      >
-        {{ link.title }}
-        <fa-icon class="nav__icon" [icon]="link.icon"></fa-icon>
-      </a>
-      }
-    </nav>
-  </div>
-  @if (logged) {
-  <div>
-    <h1>Youre logged</h1>
-  </div>
-  } @else {
-  <button class="btn btn__log" (click)="helloWorld()">Login</button>
-  }
+<header
+	class="flex flex-row gap-4 items-center px-1 py-4 justify-evenly border-b border-b-gray-200"
+>
+	<h1 class="text-4xl font-bold font-primary">
+		Berry<span class="text-lilac">Exams</span>
+	</h1>
+	<nav class="navbar">
+		@for (link of links; track $index) {
+		<a
+			routerLink="{{ link.href }}"
+			routerLinkActive="active"
+			ariaCurrentWhenActive="page"
+		>
+			{{ link.title }}
+			<fa-icon class="nav__icon" [icon]="link.icon"></fa-icon>
+		</a>
+		}
+	</nav>
+	@if (logged) {
+	<div>
+		<h1>Youre logged</h1>
+	</div>
+	} @else {
+	<button class="btn btn__log" (click)="helloWorld()">Login</button>
+	}
 </header>
