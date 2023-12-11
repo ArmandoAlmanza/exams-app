@@ -4,17 +4,36 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	--sb-track-color: #c7c7c7;
+	--sb-thumb-color: #795486;
+	--sb-size: 5px;
+
+	scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+	width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--sb-track-color);
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--sb-thumb-color);
+	border-radius: 10px;
+}
 
 /*@ Components */
 .btn {
-	background-color: #b8c0ff;
-	color: #fff;
 	border: none;
 	border-radius: 0.5rem;
 	cursor: pointer;
 	transition: background-color 0.3s;
-}
-
-.btn:hover {
-	background-color: #e7c6ff;
 }
