@@ -1,1 +1,7 @@
-<h1>Worales, logeate perro</h1>
+<button (click)="toggleRegister()">Register</button>
+
+@if (exists) {
+<app-login-form></app-login-form>
+} @else {
+<app-register-form></app-register-form>
+}

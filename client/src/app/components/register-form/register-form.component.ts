@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-not-found',
+  selector: 'app-register-form',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './not-found.component.html',
+  templateUrl: './register-form.component.html',
 })
-export class NotFoundComponent {
+export class RegisterFormComponent {
 
 }

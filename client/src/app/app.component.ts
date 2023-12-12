@@ -22,7 +22,7 @@ export class AppComponent {
   }
 
   private shouldShowNavbar(url: string): boolean {
-    const excludedRoutes = ['/', '/auth/login'];
+    const excludedRoutes = ['/', '/auth'];
 
     return !excludedRoutes.includes(url);
   }
