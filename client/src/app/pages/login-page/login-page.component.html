@@ -1,7 +1,7 @@
-<button (click)="toggleRegister()">Register</button>
+@if (showLoginForm) {
+<app-login-form (toggle)="toggleRegister()"></app-login-form>
 
-@if (exists) {
-<app-login-form></app-login-form>
 } @else {
-<app-register-form></app-register-form>
+
+<app-register-form (toggle)="toggleRegister()"></app-register-form>
 }

@@ -10,9 +10,9 @@ import { RegisterFormComponent } from '../../components/register-form/register-f
 	templateUrl: './login-page.component.html',
 })
 export class LoginPageComponent {
-	exists = true;
+	showLoginForm = true;
 
 	toggleRegister() {
-		this.exists = !this.exists;
+		this.showLoginForm = !this.showLoginForm;
 	}
 }
