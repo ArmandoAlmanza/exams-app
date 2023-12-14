@@ -17,23 +17,30 @@ import {
 	templateUrl: './login-page.component.html',
 	animations: [
 		trigger('openClose', [
+			// ...
 			state(
 				'login',
 				style({
-					// Estilos para el estado de login
+					height: '200px',
 					opacity: 1,
-					// ... otros estilos ...
+					backgroundColor: 'yellow',
 				})
 			),
 			state(
 				'register',
 				style({
-					// Estilos para el estado de register
-					opacity: 1,
-					// ... otros estilos ...
+					height: '100px',
+					opacity: 0.8,
+					backgroundColor: 'blue',
 				})
 			),
+			transition('login => register', [animate('1s')]),
+			transition('register => login', [animate('0.5s')]),
+			transition('* => register', [animate('1s')]),
+			transition('* => login', [animate('0.5s')]),
 			transition('login <=> register', [animate('0.5s')]),
+			transition('* => login', [animate('1s', style({ opacity: '*' }))]),
+			transition('* => *', [animate('1s')]),
 		]),
 	],
 })

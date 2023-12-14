@@ -6,10 +6,10 @@ import { Router, NavigationEnd } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
-	selector: 'app-root',
-	standalone: true,
-	imports: [CommonModule, RouterOutlet, NavbarComponent, BrowserAnimationsModule],
-	templateUrl: './app.component.html',
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    imports: [RouterOutlet, NavbarComponent]
 })
 export class AppComponent {
 	showNavbar = true;
