@@ -1,9 +1,7 @@
-<div [@openClose]="formState">
-	@if (formState === 'login') {
-	<app-login-form (toggle)="toggleForm()"></app-login-form>
+@if (formState === 'login') {
+<app-login-form (toggle)="toggleForm()"></app-login-form>
 
-	} @else {
+} @else {
 
-	<app-register-form (toggle)="toggleForm()"></app-register-form>
-	}
-</div>
+<app-register-form (toggle)="toggleForm()"></app-register-form>
+}
