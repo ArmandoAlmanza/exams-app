@@ -3,11 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 @NgModule({
-	imports: [
-		BrowserModule,
-		BrowserAnimationsModule,
-		AppComponent,
-	],
+	imports: [BrowserModule, BrowserAnimationsModule, AppComponent],
 	declarations: [],
 	bootstrap: [],
 })
