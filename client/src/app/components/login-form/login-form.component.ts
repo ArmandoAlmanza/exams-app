@@ -19,7 +19,11 @@ export class LoginFormComponent {
 
 	login(event: Event) {
 		event.preventDefault();
-		alert('Logeado we');
+		if (this.email.value === 'armando@coca.com') {
+			console.log('eres armando we');
+		} else {
+			console.log('no eres we');
+		}
 	}
 	@Output() toggle = new EventEmitter<void>();
 }
