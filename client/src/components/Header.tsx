@@ -1,6 +1,7 @@
 import { FaBarsStaggered } from "react-icons/fa6";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ProfleCard from "./cards/ProfleCard";
 import useScreenSize from "../hooks/useScreenSize";
 import { useState } from "react";
 import useScreenScroll from "../hooks/useScreenScroll";
@@ -30,6 +31,8 @@ const Header = () => {
                     <FaBarsStaggered />
                 </button>
                 <Navbar navOpened={menuOpened} setNavOpened={setMenuOpened} />
+                {screenSize.width >= 768 ? <ProfleCard /> : ""}
+
                 {screenSize.width >= 768 ? <Footer /> : ""}
             </header>
         </>
