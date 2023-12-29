@@ -24,11 +24,12 @@ const router = createBrowserRouter([
                 path: "/profile",
                 element: <Profile />,
             },
-            {
-                path: "/auth",
-                element: <Auth />,
-            },
         ],
+    },
+    {
+        path: "/auth",
+        element: <Auth />,
+        errorElement: <ErrorPage />,
     },
 ]);
 

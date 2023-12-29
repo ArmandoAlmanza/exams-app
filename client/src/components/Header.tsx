@@ -16,7 +16,7 @@ const Header = () => {
         <header
             className={`${
                 screenScroll >= 50
-                    ? "bg-[#d4d4d4] shadow-[0_1px_16px_rgba(0, 0, 0, 0.12)]"
+                    ? "bg-[#d4d4d4] shadow-[0_1px_16px_rgba(0, 0, 0, 0.12)] z-10"
                     : "bg-body"
             } sticky top-0 flex flex-row justify-between p-4 border-b border-b-black content-center items-center md:flex-col md:justify-evenly md:items-start md:border-b-0 md:border-r md:border-r-black md:w-72`}
         >
