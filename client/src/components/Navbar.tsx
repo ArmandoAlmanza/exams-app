@@ -9,10 +9,9 @@ interface NavProps {
 
 const Navbar = ({ navOpened, setNavOpened }: NavProps) => {
     const links = [
-        { title: "Home", path: "/" },
+        { title: "Home", path: "/exams/armando@correo.com" },
         { title: "Profile", path: "/profile" },
-        { title: "Exams", path: "/exams" },
-        { title: "Sign in/Sign up", path: "/auth" },
+        { title: "Log Out", path: "/auth" },
     ];
     const displayState = navOpened ? "top-0" : "-top-full";
     return (
