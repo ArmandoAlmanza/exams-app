@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "../App";
-import LandingPage from "../pages/LandingPage";
 import ErrorPage from "../pages/ErrorPage";
 import Exams from "../pages/Exams";
 import Profile from "../pages/Profile";
@@ -11,25 +10,21 @@ const router = createBrowserRouter([
         path: "/",
         element: <App />,
         errorElement: <ErrorPage />,
-        children: [
-            {
-                path: "/",
-                element: <LandingPage />,
-            },
-            {
-                path: "/exams",
-                element: <Exams />,
-            },
-            {
-                path: "/profile",
-                element: <Profile />,
-            },
-        ],
     },
     {
         path: "/auth",
         element: <Auth />,
         errorElement: <ErrorPage />,
+    },
+    {
+        path: "/exams",
+        element: <Exams />,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: "/profile",
+        errorElement: <ErrorPage />,
+        element: <Profile />,
     },
 ]);
 
