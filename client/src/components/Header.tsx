@@ -1,11 +1,10 @@
-import { FaBarsStaggered, FaUser } from "react-icons/fa6";
+import { FaBarsStaggered } from "react-icons/fa6";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ProfleCard from "./cards/ProfleCard";
 import useScreenSize from "../hooks/useScreenSize";
 import { useState } from "react";
 import useScreenScroll from "../hooks/useScreenScroll";
-import { Link } from "react-router-dom";
 
 const Header = () => {
     const screenSize = useScreenSize();
@@ -32,19 +31,7 @@ const Header = () => {
                 <FaBarsStaggered />
             </button>
             <Navbar navOpened={menuOpened} setNavOpened={setMenuOpened} />
-            {screenSize.width >= 768 && logged ? (
-                <ProfleCard />
-            ) : (
-                <Link
-                    to={"/auth"}
-                    className={`${
-                        screenSize.width > 500 ? "flex" : "hidden"
-                    }  justify-center items-center gap-x-2 bg-black text-white py-3 px-[1.1rem] transition-colors duration-500 hover:bg-purple text-xl mx-auto max-w-80`}
-                >
-                    <FaUser />
-                    Sign in/sign up
-                </Link>
-            )}
+            {screenSize.width >= 768 && logged ? <ProfleCard /> : ""}
 
             {screenSize.width >= 768 ? <Footer /> : ""}
         </header>
