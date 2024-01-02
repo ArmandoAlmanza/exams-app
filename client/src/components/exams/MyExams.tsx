@@ -11,7 +11,12 @@ const MyExams = () => {
 
     return (
         <div className="flex flex-col items-center content-center gap-4 m-5">
-            <h1>Welcome {user.name.split(" ")[0]} </h1>
+            <h1 className="text-3xl">
+                Welcome{" "}
+                <span className="font-second font-semibold text-violet-500">
+                    {user.name.split(" ")[0]}
+                </span>{" "}
+            </h1>
             <div className="flex justify-between gap-5 p-3">
                 {counter >= 4 ? (
                     <h3>Sorry but you don't have more exams avaliable</h3>

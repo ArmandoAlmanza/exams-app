@@ -1,17 +1,23 @@
 interface ExamProps {
     topic: string;
-    questions: number;
+    status: string;
 }
 
-const ExamCard = ({ topic, questions }: ExamProps) => {
+const ExamCard = ({ topic, status }: ExamProps) => {
     return (
-        <article className="relative bg-[url(/authbg.jpg)] p-6 h-96 w-80 md:w-full bg-no-repeat">
-            <div className="bg-white w-full z-10 p-6">
-                <h1 className="px-5 b_alt absolute bottom-3 right-10 text-white text-3xl ">
+        <article
+            className={`relative bg-[url(/${topic.toLowerCase()}.jpg)] p-6 h-96 w-80 md:w-full bg-no-repeat ${
+                topic === "General" ? "order-1" : ""
+            }`}
+        >
+            <div className=" w-full z-10 p-6">
+                <h1 className="font-second font-semibold px-10 py-1 b_alt absolute bottom-3 right-10 text-white text-3xl ">
                     {topic}
                 </h1>
-                <p>{questions}</p>
-                <button className="bg-black text-white px-2 py-1 mx-auto block w-36 transition-colors hover:bg-violet-400 hover:text-black duration-500">
+                <p className="text-white text-xl font-bold absolute top-3 left-10">
+                    {status}
+                </p>
+                <button className="absolute top-12 left-5 bg-black text-white px-3 py-2 mx-auto block w-36 transition-colors hover:bg-violet-400 hover:text-black duration-500 ">
                     Continue
                 </button>
             </div>
