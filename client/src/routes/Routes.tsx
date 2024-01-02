@@ -4,6 +4,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Exams from "../pages/Exams";
 import Profile from "../pages/Profile";
 import Auth from "../pages/Auth";
+import MyExams from "../components/exams/MyExams";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,12 @@ const router = createBrowserRouter([
         path: "/exams",
         element: <Exams />,
         errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "/exams/:userEmail",
+                element: <MyExams />,
+            },
+        ],
     },
     {
         path: "/profile",

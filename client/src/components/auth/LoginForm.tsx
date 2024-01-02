@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 interface formProps {
     state: string;
@@ -8,6 +9,7 @@ interface formProps {
 
 const LoginForm = ({ setState }: formProps) => {
     const [visible, setVisible] = useState(false);
+    const navigate = useNavigate();
     const toggleVisible = () => {
         setVisible(!visible);
     };
@@ -59,6 +61,7 @@ const LoginForm = ({ setState }: formProps) => {
                 </div>
                 <button
                     type="button"
+                    onClick={() => navigate("/exams/armando@correo.com")}
                     className="bg-black text-white px-2 py-1 mx-auto block w-36 transition-colors hover:bg-violet-400 hover:text-black duration-500"
                 >
                     Log in
