@@ -32,12 +32,19 @@ body {
 
 .shadow-header {
     background-color: #d4d4d4;
-    box-shadow: 0 1px 16px hsla(0, 0%, 0%, 0.12);
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.12);
 }
 .b {
     background: linear-gradient(
         90deg,
         rgba(202, 3, 252, 0.3),
-        hsla(14, 98%, 50%, 0)
+        rgba(252, 61, 3, 0)
+    );
+}
+.b_alt {
+    background: linear-gradient(
+        90deg,
+        rgba(85, 83, 85, 1),
+        rgba(252, 61, 3, 0)
     );
 }
