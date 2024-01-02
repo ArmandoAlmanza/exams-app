@@ -48,3 +48,30 @@ body {
         rgba(252, 61, 3, 0)
     );
 }
+
+.pending {
+    color: yellow;
+}
+
+.completed {
+    color: green;
+}
+
+.canceled {
+    color: red;
+}
+
+.general {
+    background-image: url("/general.jpg");
+}
+
+.history {
+    background-image: url("/history.jpg");
+}
+
+.biology {
+    background-image: url("/biology.jpg");
+}
+.chemestry {
+    background-image: url("/chemestry.jpg");
+}
