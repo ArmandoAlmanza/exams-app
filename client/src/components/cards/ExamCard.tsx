@@ -14,10 +14,10 @@ const ExamCard = ({ topic, status }: ExamProps) => {
                 <h1 className="font-second font-semibold px-10 py-1 b_alt absolute bottom-3 right-10 text-white text-3xl ">
                     {topic}
                 </h1>
-                <p className="text-white text-xl font-bold absolute top-3 left-10">
+                <p className="bg-black px-3 py-1 text-white text-xl font-bold absolute top-3 left-10">
                     {status}
                 </p>
-                <button className="absolute top-12 left-5 bg-black text-white px-3 py-2 mx-auto block w-36 transition-colors hover:bg-violet-400 hover:text-black duration-500 ">
+                <button className="absolute top-14 left-10 bg-black text-white px-3 py-2 mx-auto block w-36 transition-colors hover:bg-violet-400 hover:text-black duration-500 ">
                     Continue
                 </button>
             </div>
